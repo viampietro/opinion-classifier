@@ -1,0 +1,16 @@
+#!/bin/sh
+
+# Set these paths appropriately
+
+BIN=/auto_home/viampietro/Documents/Master_1/ECD/opinion-classifier/tree-tagger/bin
+CMD=/auto_home/viampietro/Documents/Master_1/ECD/opinion-classifier/tree-tagger/cmd
+LIB=/auto_home/viampietro/Documents/Master_1/ECD/opinion-classifier/tree-tagger/lib
+
+OPTIONS="-token -lemma -sgml"
+
+TAGGER=${BIN}/tree-tagger
+TOKENIZER=${CMD}/utf8-tokenize.perl
+PARFILE=${LIB}/slovenian-utf8.par
+
+$TOKENIZER $* |
+$TAGGER $OPTIONS $PARFILE

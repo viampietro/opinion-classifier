@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# Set these paths appropriately
+
+BIN=/auto_home/viampietro/Documents/Master_1/ECD/opinion-classifier/tree-tagger/bin
+CMD=/auto_home/viampietro/Documents/Master_1/ECD/opinion-classifier/tree-tagger/cmd
+LIB=/auto_home/viampietro/Documents/Master_1/ECD/opinion-classifier/tree-tagger/lib
+
+OPTIONS="-token -lemma -sgml"
+
+TAGGER=${BIN}/tree-tagger
+TOKENIZER=${CMD}/tokenize.pl
+ABBR_LIST=${LIB}/swahili-abbreviations
+PARFILE=${LIB}/swahili.par
+
+$TOKENIZER -a $ABBR_LIST $* |
+$TAGGER $OPTIONS $PARFILE
