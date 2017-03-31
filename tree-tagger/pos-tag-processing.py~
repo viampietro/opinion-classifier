@@ -1,7 +1,0 @@
-import re
-
-
-data_set_file = open("dataset.csv", "r");import re
-
-
-data_set_file = open("dataset.csv", "r");

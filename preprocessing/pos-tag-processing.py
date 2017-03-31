@@ -28,14 +28,23 @@ for data_line in data_set_file :
         # si la ligne eclatee en suivant les tabs contient 3 elements (MOT, TAG et LEMME)
         # on recupere le tag dans grammatical_category
         if (len(tree_tagger_line.split('\t')) == 3) :
+            
+            word = tree_tagger_line.split('\t')[0]
             grammatical_category = tree_tagger_line.split('\t')[1]
-
+            lemma = tree_tagger_line.split('\t')[2]
+            
             # si la categorie du mot est une des categories eligibles, contenue dans tags_list
             # on ecrit le mot dans le fichier pos_tag.csv
             if (grammatical_category in tags_list) :
-                filtered_document += tree_tagger_line.split()[2] + " "
+
+                # si le lemme est inconnu, on ajoute le mot
+                if (lemma != "<unknown>") :
+                    filtered_document += lemma + " " 
                 
     pos_tag_file.write(filtered_document + "\n")
+
+    # ecriture effective dans le fichier 
+    pos_tag_file.flush()  
         
         
     
