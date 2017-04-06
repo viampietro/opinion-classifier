@@ -4,9 +4,9 @@
 
 # Set these paths appropriately
 
-BIN=/home/vincent/Documents/Master_1/ECD/opinion-classifier/tree-tagger/bin
-CMD=/home/vincent/Documents/Master_1/ECD/opinion-classifier/tree-tagger/cmd
-LIB=/home/vincent/Documents/Master_1/ECD/opinion-classifier/tree-tagger/lib
+BIN=/auto_home/viampietro/Documents/Master_1/ECD/opinion-classifier/tree-tagger/bin
+CMD=/auto_home/viampietro/Documents/Master_1/ECD/opinion-classifier/tree-tagger/cmd
+LIB=/auto_home/viampietro/Documents/Master_1/ECD/opinion-classifier/tree-tagger/lib
 
 OPTIONS1="-token -lemma -sgml"
 OPTIONS2="-token -sgml -eps 0.00000001 -hyphen-heuristics -quiet"

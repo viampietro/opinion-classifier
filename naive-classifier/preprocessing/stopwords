@@ -1,4 +1,5 @@
 # movie field words
+film
 movie
 movies
 theatre
@@ -36,3 +37,16 @@ will
 with
 the
 www
+# own stop words
+all
+but
+have
+just
+one
+so
+they 
+her
+his
+i
+you
+he
