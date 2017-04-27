@@ -4,6 +4,9 @@ movie
 movies
 theatre
 cinema
+actor
+actress
+actresses
 # common english language stopwords
 a
 about
@@ -12,14 +15,12 @@ and
 are
 as
 at
-be
 by
 com
 for
 from
 how
 in
-is
 it
 of
 on
@@ -40,7 +41,6 @@ www
 # own stop words
 all
 but
-have
 just
 one
 so
@@ -50,3 +50,4 @@ his
 i
 you
 he
+even
