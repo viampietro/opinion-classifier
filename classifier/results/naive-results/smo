@@ -1,9 +1,3 @@
-ld model: 307.61 seconds
-
-=== Evaluation on test split ===
-
-Time taken to test model on test split: 15.3 seconds
-
 === Summary ===
 
 Correctly Classified Instances        3047               89.6176 %
