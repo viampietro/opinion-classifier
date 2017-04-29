@@ -1,0 +1,2 @@
+def print_results (results_file, expected_class) :
+    results = open(results_file + ".csv", "r", encoding="utf-8");

@@ -1,3 +1,0 @@
-FIND : (.*\n)*.*^inst#.*\n
-FIND : \n^=== Evaluation(.*\n)*
-FIND : .*,.*,.*:(.*),.*,.* REPLACE : $1
