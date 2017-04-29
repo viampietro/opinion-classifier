@@ -1,0 +1,30 @@
+ld model: 413.16 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 19.54 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        3056               89.8824 %
+Incorrectly Classified Instances       344               10.1176 %
+Kappa statistic                          0.7977
+Mean absolute error                      0.1012
+Root mean squared error                  0.3181
+Relative absolute error                 20.2352 %
+Root relative squared error             63.616  %
+Total Number of Instances             3400     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,886    0,089    0,910      0,886    0,898      0,798    0,899     0,863     -1
+                 0,911    0,114    0,888      0,911    0,900      0,798    0,899     0,854     1
+Weighted Avg.    0,899    0,101    0,899      0,899    0,899      0,798    0,899     0,859     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1512  194 |    a = -1
+  150 1544 |    b = 1
+

@@ -1,0 +1,27 @@
+Naïve Bayes 10 folds cross-validation (without parameters) 
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        8687               86.87   %
+Incorrectly Classified Instances      1313               13.13   %
+Kappa statistic                          0.7374
+Mean absolute error                      0.1353
+Root mean squared error                  0.3387
+Relative absolute error                 27.0564 %
+Root relative squared error             67.7419 %
+Total Number of Instances            10000     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,840    0,103    0,891      0,840    0,865      0,739    0,939     0,940     -1
+                 0,897    0,160    0,849      0,897    0,872      0,739    0,939     0,935     1
+Weighted Avg.    0,869    0,131    0,870      0,869    0,869      0,739    0,939     0,937     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 4200  800 |    a = -1
+  513 4487 |    b = 1
+
