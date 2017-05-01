@@ -30,3 +30,21 @@ def print_results (results_file, expected_class) :
     accuracy = (number_of_correctly_classified * 100) / number_of_documents
     
     print(str(number_of_documents) + " documents, " + str(number_of_correctly_classified) + " correctly classified documents, " + str(accuracy) + "% accuracy.")
+
+#
+#
+# ACTION : extraction des labels de classes d'un fichier de predictions
+# de classes .csv
+#
+def extract_labels(source_file_name, destination_file_name) :
+
+    source_file = open(source_file_name + ".csv", "r", encoding="utf-8");
+    destination_file = open(destination_file_name + ".csv", "a", encoding="utf-8");
+    
+    for line in source_file :
+
+        # on recupere la classe trouvee
+        found_class = line.split(',')[2].split(':')[1]
+
+        # ecriture du label dans le fichier de destination
+        destination_file.write(found_class + "\n")
