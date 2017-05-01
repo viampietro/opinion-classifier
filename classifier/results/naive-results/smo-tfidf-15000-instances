@@ -1,0 +1,46 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.SMO -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.NormalizedPolyKernel -E 2.0 -C 250007" -calibrator "weka.classifiers.functions.SGD -F 0 -L 0.01 -R 1.0E-4 -E 500 -C 0.001 -S 1"
+Relation:     opinion-weka.filters.unsupervised.attribute.StringToWordVector-R1-W3000-prune-rate-1.0-C-I-N1-L-stemmerweka.core.stemmers.NullStemmer-stopwords-handlerweka.core.stopwords.WordsFromFile -stopwords /home/vincent/Documents/Master_1/ECD/opinion-classifier/classifier/preprocessing/stopwords-M1-tokenizerweka.core.tokenizers.WordTokenizer -delimiters " \r \t.,;:\"()?!\r\r\r^0123456789/\\_<>{}[]#*=-+\%$&\t@`"-weka.filters.unsupervised.attribute.Normalize-S1.0-T0.0
+Instances:    15000
+Attributes:   3646
+              [list of attributes omitted]
+Test mode:    split 66.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+SMO
+
+Kernel used:
+  Normalized Poly Kernel: K(x,y) = <x,y>^2.0/(<x,x>^2.0*<y,y>^2.0)^(1/2)
+
+Time taken to build model: 5756.34 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 311.93 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        4602               90.2353 %
+Incorrectly Classified Instances       498                9.7647 %
+Kappa statistic                          0.8048
+Mean absolute error                      0.0976
+Root mean squared error                  0.3125
+Relative absolute error                 19.5274 %
+Root relative squared error             62.489  %
+Total Number of Instances             5100     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,884    0,078    0,921      0,884    0,902      0,805    0,903     0,872     -1
+                 0,922    0,116    0,885      0,922    0,903      0,805    0,903     0,854     1
+Weighted Avg.    0,902    0,097    0,903      0,902    0,902      0,805    0,903     0,864     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 2285  301 |    a = -1
+  197 2317 |    b = 1
+
