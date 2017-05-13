@@ -1,3 +1,8 @@
+# Alexandre Culty (21508308)
+# Maryam Soheili Majd (21613073) 
+# Nicolas Delalande (20121972)
+# Vincent Iampietro (20142295)
+
 import re, os
 
 # transform(r"path", max, nom) !

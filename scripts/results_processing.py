@@ -1,3 +1,8 @@
+# Alexandre Culty (21508308)
+# Maryam Soheili Majd (21613073) 
+# Nicolas Delalande (20121972)
+# Vincent Iampietro (20142295)
+
 # PRE-REQUIS : results_file est un fichier contenant le resultat de
 # classification de documents (une ligne = un document).
 # Chaque ligne a pour syntaxe : inst#,actual,predicted,error,prediction
